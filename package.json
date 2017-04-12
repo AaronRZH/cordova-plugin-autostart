@@ -1,0 +1,27 @@
+{
+    "name": "cordova-plugin-autostart",
+    "version": "1.0.0",
+    "description": "Cordova Autostart Plugin",
+    "cordova": {
+        "platforms": [
+            "android"
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/AaronRZH/cordova-plugin-autostart.git"
+    },
+    "keywords": [
+        "cordova",
+        "autostart",
+        "cordova-android"
+    ],
+    "engines": [
+        {
+            "name": "cordova",
+            "version": ">=3.0.0"
+        }
+    ],
+    "author": "AaronRzh",
+    "license": "Apache-2.0"
+}
