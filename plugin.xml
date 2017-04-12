@@ -27,7 +27,7 @@
     <keywords>cordova,autostart</keywords>
 
     <engines>
-      <engine name="cordova-android" version=">=4.0.0" />
+      <engine name="cordova-android" version=">=3.0.0" />
     </engines>
 
     <platform name="android">
@@ -39,12 +39,15 @@
         </config-file>
 
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
-            <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"></uses-permission>
             <receiver android:name="com.aaronrzh.cordova.plugin.autostart.AutostartReceiver">
                 <intent-filter>
                     <action android:name="android.intent.action.BOOT_COMPLETED" />
                 </intent-filter>
             </receiver>
+        </config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+            <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
         </config-file>
 
         <source-file src="src/android/AutostartPlugin.java" target-dir="src/com/aaronrzh/cordova/plugin/autostart" />
