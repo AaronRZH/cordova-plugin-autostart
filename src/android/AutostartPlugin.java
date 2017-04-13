@@ -11,7 +11,7 @@ public class AutostartPlugin extends CordovaPlugin {
     public AutostartPlugin() {
     }
 
-    @override
+    @Override
     protected void pluginInitialize() {
         LOG.w(LOG_TAG, cordova.getActivity().getLocalClassName());
     }
