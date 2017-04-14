@@ -30,6 +30,10 @@
       <engine name="cordova-android" version=">=3.0.0" />
     </engines>
 
+    <js-module src="www/autostart.js" name="AutoStart">
+        <clobbers target="cordova.plugins.autostart" />
+    </js-module>
+
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="Autostart" >
