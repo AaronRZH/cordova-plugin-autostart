@@ -22,4 +22,3 @@ GET the state of this plugin
 
 ## License    
 This software is released under the Apache 2.0 License.  
-© 2015 Toni Korin
